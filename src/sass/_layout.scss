@@ -1,0 +1,163 @@
+@use 'mixins' as m;
+
+body {
+  @include m.displayGrid(3, 1fr, 'header' 'main' 'footer');
+  header {
+    div {
+      &.upper {
+        @include m.displayFlex(row, nowrap, space-between, center);
+      }
+      &.lower {
+        nav {
+          ul {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
+        }
+      }
+      &.menu {
+        @include m.displayFlex(column, nowrap, center, center);
+        div {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+  }
+  main {
+    div {
+      &.topMain {
+        .planetImg {
+          @include m.displayFlex(column, nowrap, center, center);
+        }
+        .info {
+          @include m.displayFlex(column, nowrap, space-between, center);
+          .details {
+            @include m.displayFlex(column, nowrap, space-between, center);
+            .facts {
+              @include m.displayFlex(row, nowrap, space-between, center);
+            }
+          }
+          nav {
+            @include m.displayFlex(column, nowrap, center, center);
+          }
+        }
+      }
+      &.data {
+        @include m.displayFlex(column, nowrap, space-between, center);
+        div {
+          @include m.displayFlex(row, nowrap, space-between, center);
+        }
+      }
+    }
+  }
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    header {
+      div {
+        &.upper {
+          @include m.displayFlex(column, nowrap, center, center);
+          nav {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
+        }
+      }
+    }
+    main {
+      div {
+        &.topMain {
+          .info {
+            @include m.displayFlex(row, nowrap, space-between, center);
+            .details {
+              @include m.displayFlex(column, nowrap, center, flex-start);
+            }
+            nav {
+              ul {
+                @include m.displayFlex(column, nowrap, space-between, stretch);
+              }
+            }
+          }
+        }
+        &.data {
+          @include m.displayFlex(row, nowrap, space-between, center);
+          div {
+            @include m.displayFlex(column, nowrap, space-between, flex-start);
+          }
+        }
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    header {
+      div {
+        &.upper {
+          @include m.displayFlex(row, nowrap, space-between, center);
+          nav {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
+        }
+      }
+    }
+    main {
+      div {
+        &.topMain {
+          @include m.displayFlex(row, nowrap, flex-end, center);
+          .info {
+            @include m.displayFlex(column, nowrap, space-between, center);
+            .details {
+              @include m.displayFlex(column, nowrap, center, flex-start);
+            }
+            nav {
+              ul {
+                @include m.displayFlex(column, nowrap, space-between, stretch);
+              }
+            }
+          }
+        }
+        &.data {
+          @include m.displayFlex(row, nowrap, space-between, center);
+          div {
+            @include m.displayFlex(column, nowrap, space-between, flex-start);
+          }
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    header {
+      div {
+        &.upper {
+          @include m.displayFlex(row, nowrap, space-between, center);
+          nav {
+            @include m.displayFlex(row, nowrap, space-between, center);
+          }
+        }
+      }
+    }
+    main {
+      div {
+        &.topMain {
+          @include m.displayFlex(row, nowrap, flex-end, center);
+          .info {
+            @include m.displayFlex(column, nowrap, space-between, center);
+            .details {
+              @include m.displayFlex(column, nowrap, center, flex-start);
+            }
+            nav {
+              ul {
+                @include m.displayFlex(column, nowrap, space-between, stretch);
+              }
+            }
+          }
+        }
+        &.data {
+          @include m.displayFlex(row, nowrap, space-between, center);
+          div {
+            @include m.displayFlex(column, nowrap, space-between, flex-start);
+          }
+        }
+      }
+    }
+  }
+}
