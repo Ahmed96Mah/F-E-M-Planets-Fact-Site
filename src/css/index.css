@@ -1,0 +1,1890 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+/* ------------ Colors ------------ */
+/* nav color */
+/* Media Queries */
+body {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "main" "footer";
+  /* ----------------------- Media Queries ----------------------- */
+}
+body header div.upper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body header div.lower nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body header div.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body header div.menu div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.topMain .planetImg {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body main div.topMain .info {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.topMain .info .details {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.topMain .info .details .facts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.topMain .info nav {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+body main div.data {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+body main div.data div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  body {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  body header div.upper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  body header div.upper nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain .info {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain .info .details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div.topMain .info nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  body main div.data {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.data div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  body {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  body header div.upper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header div.upper nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body main div.topMain .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain .info .details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div.topMain .info nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  body main div.data {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.data div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  body {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  body header div.upper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body header div.upper nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  body main div.topMain .info {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.topMain .info .details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body main div.topMain .info nav ul {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  body main div.data {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body main div.data div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+header {
+  grid-area: header;
+  font-family: "Antonio", sans-serif;
+  /* ----------------------- Media Queries ----------------------- */
+}
+header div.upper {
+  padding: 0rem 6%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header div.upper h1 {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.066rem;
+}
+header div.upper nav {
+  display: none;
+}
+header div.upper.active img {
+  filter: brightness(0) saturate(100%) invert(55%) sepia(8%) saturate(455%) hue-rotate(201deg) brightness(93%) contrast(91%);
+}
+header div.lower {
+  padding: 1.3rem 9.5% 1.05rem 9.5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+header div.lower nav {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+header div.lower nav ul {
+  list-style-type: none;
+  padding-left: 0rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.563rem;
+  margin: 0rem;
+}
+header div.lower nav ul li {
+  letter-spacing: 0.121rem;
+}
+header div.lower nav ul.Mercury li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Mercury li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #419ebb;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Venus li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Venus li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #eda249;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Earth li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Earth li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #6f2ed6;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Mars li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Mars li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #d14c32;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Jupiter li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Jupiter li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #d83a34;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Saturn li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Saturn li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #cd5120;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Uranus li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Uranus li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #1ec2a4;
+  display: block;
+  width: 125%;
+}
+header div.lower nav ul.Neptune li.active {
+  color: #ffffff;
+}
+header div.lower nav ul.Neptune li.active::after {
+  position: relative;
+  margin-top: -0.25rem;
+  bottom: -1.1rem;
+  left: -12.5%;
+  content: "";
+  border-bottom: 0.25rem solid #2d68f0;
+  display: block;
+  width: 125%;
+}
+header div.lower.hide {
+  display: none;
+}
+header div.menu nav {
+  width: 87.2%;
+  margin-top: 2.938rem;
+  height: 73.16vh;
+}
+header div.menu nav .navDiv {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.438rem;
+}
+header div.menu nav .navDiv .circle {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 100%;
+}
+header div.menu nav .navDiv .circle.Mercury {
+  background-color: #def4fc;
+}
+header div.menu nav .navDiv .circle.Venus {
+  background-color: #f7cc7f;
+}
+header div.menu nav .navDiv .circle.Earth {
+  background-color: #545bfe;
+}
+header div.menu nav .navDiv .circle.Mars {
+  background-color: #ff6a45;
+}
+header div.menu nav .navDiv .circle.Jupiter {
+  background-color: #ecad7a;
+}
+header div.menu nav .navDiv .circle.Saturn {
+  background-color: #fccb6b;
+}
+header div.menu nav .navDiv .circle.Uranus {
+  background-color: #65f0d5;
+}
+header div.menu nav .navDiv .circle.Neptune {
+  background-color: #497efa;
+}
+header div.menu nav .navDiv .nav {
+  width: 88%;
+}
+header div.menu nav .navDiv .nav a {
+  color: #ffffff;
+  font-family: "League Spartan", sans-serif;
+  text-decoration: none;
+  font-size: 0.938rem;
+  font-weight: 700;
+  letter-spacing: 0.085rem;
+}
+header div.menu nav .navDiv .nav a img {
+  margin-right: 0.813rem;
+}
+header div.menu.hide {
+  display: none;
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  header {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  header {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  header div.upper h1 {
+    margin-top: 2rem;
+    margin-bottom: 3.063rem;
+  }
+  header div.upper img {
+    display: none;
+  }
+  header div.upper nav {
+    width: 100%;
+    margin-bottom: 2.25rem;
+  }
+  header div.upper nav a {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.688rem;
+    letter-spacing: 0.063rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  header div.upper nav a.Mercury.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mercury.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #def4fc;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mercury.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Venus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Venus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #f7cc7f;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Venus.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Earth.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Earth.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #545bfe;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Earth.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Mars.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mars.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ff6a45;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mars.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Jupiter.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Jupiter.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ecad7a;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Jupiter.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Saturn.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Saturn.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #fccb6b;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Saturn.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Uranus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Uranus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #65f0d5;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Uranus.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.upper nav a.Neptune.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Neptune.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    bottom: -1.1rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #497efa;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Neptune.active::after {
+    bottom: -2.3rem;
+    border-width: 0.4rem;
+    margin-top: -0.4rem;
+  }
+  header div.lower {
+    display: none;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  header {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  header div.upper {
+    padding: 0rem 3.188rem 0rem 2rem;
+  }
+  header div.upper h1 {
+    margin-top: 1.375rem;
+    margin-bottom: 1.688rem;
+  }
+  header div.upper img {
+    display: none;
+  }
+  header div.upper nav {
+    width: 45.41%;
+  }
+  header div.upper nav a {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.688rem;
+    letter-spacing: 0.063rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  header div.upper nav a.Mercury:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mercury:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #def4fc;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mercury.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mercury.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #def4fc;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Venus:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Venus:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #f7cc7f;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Venus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Venus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #f7cc7f;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Earth:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Earth:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #545bfe;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Earth.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Earth.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #545bfe;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mars:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mars:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ff6a45;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mars.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mars.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ff6a45;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Jupiter:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Jupiter:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ecad7a;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Jupiter.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Jupiter.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ecad7a;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Saturn:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Saturn:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #fccb6b;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Saturn.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Saturn.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #fccb6b;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Uranus:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Uranus:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #65f0d5;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Uranus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Uranus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #65f0d5;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Neptune:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Neptune:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #497efa;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Neptune.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Neptune.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #497efa;
+    display: block;
+    width: 125%;
+  }
+  header div.lower {
+    display: none;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  header {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  header div.upper {
+    padding: 0rem 3.188rem 0rem 2rem;
+  }
+  header div.upper h1 {
+    margin-top: 1.375rem;
+    margin-bottom: 1.688rem;
+  }
+  header div.upper img {
+    display: none;
+  }
+  header div.upper nav {
+    width: 45.41%;
+  }
+  header div.upper nav a {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: "League Spartan", sans-serif;
+    font-size: 0.688rem;
+    letter-spacing: 0.063rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  header div.upper nav a.Mercury:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mercury:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #def4fc;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mercury.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mercury.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #def4fc;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Venus:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Venus:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #f7cc7f;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Venus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Venus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #f7cc7f;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Earth:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Earth:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #545bfe;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Earth.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Earth.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #545bfe;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mars:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mars:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ff6a45;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Mars.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Mars.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ff6a45;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Jupiter:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Jupiter:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ecad7a;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Jupiter.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Jupiter.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #ecad7a;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Saturn:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Saturn:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #fccb6b;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Saturn.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Saturn.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #fccb6b;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Uranus:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Uranus:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #65f0d5;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Uranus.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Uranus.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #65f0d5;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Neptune:hover {
+    color: #ffffff;
+  }
+  header div.upper nav a.Neptune:hover::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #497efa;
+    display: block;
+    width: 125%;
+  }
+  header div.upper nav a.Neptune.active {
+    color: #ffffff;
+  }
+  header div.upper nav a.Neptune.active::after {
+    position: relative;
+    margin-top: -0.25rem;
+    top: -2.75rem;
+    left: -12.5%;
+    content: "";
+    border-bottom: 0.25rem solid #497efa;
+    display: block;
+    width: 125%;
+  }
+  header div.lower {
+    display: none;
+  }
+}
+
+main {
+  grid-area: main;
+  /* ----------------------- Media Queries ----------------------- */
+}
+main div.topMain .planetImg.Mercury :first-child {
+  margin-top: 6rem;
+  width: 6.938rem;
+  margin-bottom: 6.125rem;
+}
+main div.topMain .planetImg.Mercury :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Mercury.geo :nth-child(2) {
+  margin-bottom: 6.125rem;
+}
+main div.topMain .planetImg.Venus :first-child {
+  margin-top: 4.625rem;
+  width: 9.625rem;
+  margin-bottom: 5.5rem;
+}
+main div.topMain .planetImg.Venus :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Venus.geo :nth-child(2) {
+  margin-bottom: 5.5rem;
+}
+main div.topMain .planetImg.Earth :first-child {
+  margin-top: 4.063rem;
+  width: 10.813rem;
+  margin-bottom: 4.875rem;
+}
+main div.topMain .planetImg.Earth :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Earth.geo :nth-child(2) {
+  margin-bottom: 4.875rem;
+}
+main div.topMain .planetImg.Mars :first-child {
+  margin-top: 5.5rem;
+  width: 8.063rem;
+  margin-bottom: 6.25rem;
+}
+main div.topMain .planetImg.Mars :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Mars.geo :nth-child(2) {
+  margin-bottom: 6.25rem;
+}
+main div.topMain .planetImg.Jupiter :first-child {
+  margin-top: 2.5rem;
+  width: 14rem;
+  margin-bottom: 3.313rem;
+}
+main div.topMain .planetImg.Jupiter :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Jupiter.geo :nth-child(2) {
+  margin-bottom: 3.313rem;
+}
+main div.topMain .planetImg.Saturn :first-child {
+  margin-top: 1.563rem;
+  width: 16rem;
+  margin-bottom: 2.25rem;
+}
+main div.topMain .planetImg.Saturn :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Saturn.geo :nth-child(2) {
+  margin-bottom: 2.25rem;
+}
+main div.topMain .planetImg.Uranus :first-child {
+  margin-top: 4rem;
+  width: 11rem;
+  margin-bottom: 4.813rem;
+}
+main div.topMain .planetImg.Uranus :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Uranus.geo :nth-child(2) {
+  margin-bottom: 4.813rem;
+}
+main div.topMain .planetImg.Neptune :first-child {
+  margin-top: 4rem;
+  width: 10.813rem;
+  margin-bottom: 4.875rem;
+}
+main div.topMain .planetImg.Neptune :nth-child(2) {
+  margin-top: -7.55rem;
+  width: 3.899rem;
+}
+main div.topMain .planetImg.Neptune.geo :nth-child(2) {
+  margin-bottom: 4.875rem;
+}
+main div.topMain .info {
+  font-family: "League Spartan", sans-serif;
+  color: #ffffff;
+}
+main div.topMain .info .details h2 {
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  font-size: 2.5rem;
+  margin-top: 0rem;
+  margin-bottom: 1.875rem;
+}
+main div.topMain .info .details p {
+  margin: 0rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  text-align: center;
+  font-size: 0.7rem;
+  width: 88%;
+}
+main div.topMain .info .details .facts {
+  color: #838391;
+  width: 37%;
+  font-size: 0.75rem;
+  margin-top: 4.188rem;
+  margin-bottom: 1.625rem;
+}
+main div.topMain .info .details .facts span {
+  font-weight: 400;
+}
+main div.topMain .info .details .facts span a {
+  color: #838391;
+  font-weight: 700;
+}
+main div.topMain .info .details .facts img {
+  width: 0.75rem;
+}
+main div.topMain .info nav ul {
+  display: none;
+}
+main div.data {
+  min-height: 13.5rem;
+  margin-bottom: 2.938rem;
+}
+main div.data div {
+  width: 87.2%;
+  min-height: 3rem;
+  color: #838391;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+main div.data div .text {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 0.5rem;
+  margin-left: 1.438rem;
+  letter-spacing: 0.046rem;
+}
+main div.data div .data {
+  color: #ffffff;
+  font-family: "Antonio", sans-serif;
+  font-weight: 500;
+  font-size: 1.25rem;
+  margin-right: 1.438rem;
+  letter-spacing: -0.04rem;
+}
+main.hide {
+  display: none;
+}
+@media only screen and (min-width: 41.25rem) and (max-width: 53.75rem) and (max-height: 26.25rem) {
+  main {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+}
+@media only screen and (min-width: 37.5rem) and (max-width: 63.938rem) {
+  main {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+  }
+  main div.topMain .planetImg.Mercury :first-child {
+    margin-top: 9.188rem;
+    width: 11.5rem;
+    margin-bottom: 9rem;
+  }
+  main div.topMain .planetImg.Mercury :nth-child(2) {
+    margin-top: -13rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Mercury.geo :nth-child(2) {
+    margin-bottom: 7rem;
+  }
+  main div.topMain .planetImg.Venus :first-child {
+    margin-top: 7rem;
+    width: 15.813rem;
+    margin-bottom: 6.875rem;
+  }
+  main div.topMain .planetImg.Venus :nth-child(2) {
+    margin-top: -11.5rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Venus.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Earth :first-child {
+    margin-top: 6rem;
+    width: 17.813rem;
+    margin-bottom: 5.813rem;
+  }
+  main div.topMain .planetImg.Earth :nth-child(2) {
+    margin-top: -10.85rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Earth.geo :nth-child(2) {
+    margin-bottom: 4.875rem;
+  }
+  main div.topMain .planetImg.Mars :first-child {
+    margin-top: 8.25rem;
+    width: 13.313rem;
+    margin-bottom: 8rem;
+  }
+  main div.topMain .planetImg.Mars :nth-child(2) {
+    margin-top: -12.15rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Mars.geo :nth-child(2) {
+    margin-bottom: 6.25rem;
+  }
+  main div.topMain .planetImg.Jupiter :first-child {
+    margin-top: 3.375rem;
+    width: 23.063rem;
+    margin-bottom: 3.188rem;
+  }
+  main div.topMain .planetImg.Jupiter :nth-child(2) {
+    margin-top: -9.05rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Jupiter.geo :nth-child(2) {
+    margin-bottom: 3.313rem;
+  }
+  main div.topMain .planetImg.Saturn :first-child {
+    margin-top: 1.563rem;
+    width: 26.375rem;
+    margin-bottom: 1.563rem;
+  }
+  main div.topMain .planetImg.Saturn :nth-child(2) {
+    margin-top: -8.15rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Saturn.geo :nth-child(2) {
+    margin-bottom: 2.25rem;
+  }
+  main div.topMain .planetImg.Uranus :first-child {
+    margin-top: 5.813rem;
+    width: 18.125rem;
+    margin-bottom: 5.688rem;
+  }
+  main div.topMain .planetImg.Uranus :nth-child(2) {
+    margin-top: -10.75rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Uranus.geo :nth-child(2) {
+    margin-bottom: 4.813rem;
+  }
+  main div.topMain .planetImg.Neptune :first-child {
+    margin-top: 6rem;
+    width: 17.813rem;
+    margin-bottom: 5.813rem;
+  }
+  main div.topMain .planetImg.Neptune :nth-child(2) {
+    margin-top: -10.75rem;
+    width: 4.899rem;
+  }
+  main div.topMain .planetImg.Neptune.geo :nth-child(2) {
+    margin-bottom: 4.875rem;
+  }
+  main div.topMain .info {
+    padding: 0rem 6%;
+  }
+  main div.topMain .info .details {
+    width: 55%;
+  }
+  main div.topMain .info .details h2 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 1.875rem;
+  }
+  main div.topMain .info .details p {
+    text-align: left;
+    font-size: 0.688rem;
+    margin-bottom: 0rem;
+  }
+  main div.topMain .info nav {
+    width: 39%;
+  }
+  main div.topMain .info nav ul {
+    height: 10rem;
+    width: 100%;
+    padding-left: 0rem;
+    margin: 0rem;
+    list-style-type: none;
+  }
+  main div.topMain .info nav ul li {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.121rem;
+    font-size: 0.563rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0rem;
+  }
+  main div.topMain .info nav ul li span.number {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 1.25rem;
+  }
+  main div.topMain .info nav ul.Mercury li.active {
+    background-color: #419ebb;
+  }
+  main div.topMain .info nav ul.Venus li.active {
+    background-color: #eda249;
+  }
+  main div.topMain .info nav ul.Earth li.active {
+    background-color: #6f2ed6;
+  }
+  main div.topMain .info nav ul.Mars li.active {
+    background-color: #d14c32;
+  }
+  main div.topMain .info nav ul.Jupiter li.active {
+    background-color: #d83a34;
+  }
+  main div.topMain .info nav ul.Saturn li.active {
+    background-color: #cd5120;
+  }
+  main div.topMain .info nav ul.Uranus li.active {
+    background-color: #1ec2a4;
+  }
+  main div.topMain .info nav ul.Neptune li.active {
+    background-color: #2d68f0;
+  }
+  main div.data {
+    min-height: auto;
+    padding: 0rem 6%;
+  }
+  main div.data div {
+    width: 21.7%;
+    padding-left: 0.763rem;
+  }
+  main div.data div .text {
+    margin-left: 0rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.7rem;
+  }
+  main div.data div .data {
+    font-size: 1.5rem;
+    padding-bottom: 1.125rem;
+    letter-spacing: -0.056rem;
+  }
+}
+@media only screen and (min-width: 64rem) and (max-width: 75rem) and (min-height: 37.5rem) {
+  main {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+  }
+  main div.topMain .planetImg.Mercury {
+    padding-right: 20.83%;
+  }
+  main div.topMain .planetImg.Mercury :first-child {
+    margin-top: 15.125rem;
+    width: 20.14vw;
+    margin-bottom: 11.5rem;
+  }
+  main div.topMain .planetImg.Mercury :nth-child(2) {
+    margin-top: -15.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Mercury.geo :nth-child(2) {
+    margin-bottom: 5.375rem;
+  }
+  main div.topMain .planetImg.Venus {
+    padding-right: 17.01%;
+  }
+  main div.topMain .planetImg.Venus :first-child {
+    margin-top: 11.688rem;
+    width: 27.7779vw;
+    margin-bottom: 6.875rem;
+  }
+  main div.topMain .planetImg.Venus :nth-child(2) {
+    margin-top: -14.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Venus.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Earth {
+    padding-right: 15.27%;
+  }
+  main div.topMain .planetImg.Earth :first-child {
+    margin-top: 10.125rem;
+    width: 31.25vw;
+    margin-bottom: 8.875rem;
+  }
+  main div.topMain .planetImg.Earth :nth-child(2) {
+    margin-top: -17.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Earth.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Mars {
+    padding-right: 19.23%;
+  }
+  main div.topMain .planetImg.Mars :first-child {
+    margin-top: 13.688rem;
+    width: 17.70888vw;
+    margin-bottom: 12.438rem;
+  }
+  main div.topMain .planetImg.Mars :nth-child(2) {
+    margin-top: -16.55rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Mars.geo :nth-child(2) {
+    margin-bottom: 6.25rem;
+  }
+  main div.topMain .planetImg.Jupiter {
+    padding-right: 10.69%;
+  }
+  main div.topMain .planetImg.Jupiter :first-child {
+    margin-top: 6rem;
+    width: 40.416668vw;
+    margin-bottom: 4.75rem;
+  }
+  main div.topMain .planetImg.Jupiter :nth-child(2) {
+    margin-top: -17.75rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Jupiter.geo :nth-child(2) {
+    margin-bottom: 5.6rem;
+  }
+  main div.topMain .planetImg.Saturn {
+    padding-right: 7.77%;
+  }
+  main div.topMain .planetImg.Saturn :first-child {
+    margin-top: 4.313rem;
+    width: 46.25vw;
+    margin-bottom: 1.125rem;
+  }
+  main div.topMain .planetImg.Saturn :nth-child(2) {
+    margin-top: -18rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Saturn.geo :nth-child(2) {
+    margin-bottom: 6rem;
+  }
+  main div.topMain .planetImg.Uranus {
+    padding-right: 14.93%;
+  }
+  main div.topMain .planetImg.Uranus :first-child {
+    margin-top: 9.875rem;
+    width: 31.806vw;
+    margin-bottom: 8.625rem;
+  }
+  main div.topMain .planetImg.Uranus :nth-child(2) {
+    margin-top: -17.6rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Uranus.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Neptune {
+    padding-right: 15.27%;
+  }
+  main div.topMain .planetImg.Neptune :first-child {
+    margin-top: 10.125rem;
+    width: 31.25vw;
+    margin-bottom: 8.875rem;
+  }
+  main div.topMain .planetImg.Neptune :nth-child(2) {
+    margin-top: -18rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Neptune.geo :nth-child(2) {
+    margin-bottom: 6rem;
+  }
+  main div.topMain .info {
+    padding: 0rem 11.45% 0rem 0rem;
+    max-width: 21.875rem;
+  }
+  main div.topMain .info .details {
+    width: 100%;
+  }
+  main div.topMain .info .details h2 {
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 2.063rem;
+    margin-top: 9.313rem;
+  }
+  main div.topMain .info .details p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-bottom: 0rem;
+    width: 97%;
+  }
+  main div.topMain .info .details .facts {
+    font-size: 0.875rem;
+    margin-top: 3.438rem;
+    margin-bottom: 2.313rem;
+  }
+  main div.topMain .info nav {
+    width: 21.875rem;
+    margin-bottom: 5.438rem;
+  }
+  main div.topMain .info nav ul {
+    height: 10rem;
+    width: 100%;
+    padding-left: 0rem;
+    margin: 0rem;
+    list-style-type: none;
+  }
+  main div.topMain .info nav ul li {
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.161rem;
+    font-size: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0rem;
+  }
+  main div.topMain .info nav ul li span.number {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 1.25rem;
+  }
+  main div.topMain .info nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  main div.topMain .info nav ul.Mercury li.active {
+    background-color: #419ebb;
+  }
+  main div.topMain .info nav ul.Venus li.active {
+    background-color: #eda249;
+  }
+  main div.topMain .info nav ul.Earth li.active {
+    background-color: #6f2ed6;
+  }
+  main div.topMain .info nav ul.Mars li.active {
+    background-color: #d14c32;
+  }
+  main div.topMain .info nav ul.Jupiter li.active {
+    background-color: #d83a34;
+  }
+  main div.topMain .info nav ul.Saturn li.active {
+    background-color: #cd5120;
+  }
+  main div.topMain .info nav ul.Uranus li.active {
+    background-color: #1ec2a4;
+  }
+  main div.topMain .info nav ul.Neptune li.active {
+    background-color: #2d68f0;
+  }
+  main div.data {
+    min-height: auto;
+    padding: 0rem 11.45%;
+    margin-bottom: 3.5rem;
+  }
+  main div.data div {
+    width: 20.9875%;
+    padding-left: 1.375rem;
+  }
+  main div.data div .text {
+    font-size: 0.6rem;
+    margin-left: 0rem;
+    padding-top: 1.313rem;
+    padding-bottom: 0.813rem;
+    letter-spacing: 0.063rem;
+  }
+  main div.data div .data {
+    font-size: 2.25rem;
+    padding-bottom: 1.625rem;
+    letter-spacing: -0.094rem;
+  }
+}
+@media only screen and (min-height: 31.25rem) and (min-width: 73.75rem) {
+  main {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+  }
+  main div.topMain .planetImg.Mercury {
+    padding-right: 20.83%;
+  }
+  main div.topMain .planetImg.Mercury :first-child {
+    margin-top: 15.125rem;
+    width: 20.14vw;
+    margin-bottom: 11.5rem;
+  }
+  main div.topMain .planetImg.Mercury :nth-child(2) {
+    margin-top: -15.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Mercury.geo :nth-child(2) {
+    margin-bottom: 5.375rem;
+  }
+  main div.topMain .planetImg.Venus {
+    padding-right: 17.01%;
+  }
+  main div.topMain .planetImg.Venus :first-child {
+    margin-top: 11.688rem;
+    width: 27.7779vw;
+    margin-bottom: 6.875rem;
+  }
+  main div.topMain .planetImg.Venus :nth-child(2) {
+    margin-top: -14.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Venus.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Earth {
+    padding-right: 15.27%;
+  }
+  main div.topMain .planetImg.Earth :first-child {
+    margin-top: 10.125rem;
+    width: 31.25vw;
+    margin-bottom: 8.875rem;
+  }
+  main div.topMain .planetImg.Earth :nth-child(2) {
+    margin-top: -17.5rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Earth.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Mars {
+    padding-right: 19.23%;
+  }
+  main div.topMain .planetImg.Mars :first-child {
+    margin-top: 13.688rem;
+    width: 17.70888vw;
+    margin-bottom: 12.438rem;
+  }
+  main div.topMain .planetImg.Mars :nth-child(2) {
+    margin-top: -16.55rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Mars.geo :nth-child(2) {
+    margin-bottom: 6.25rem;
+  }
+  main div.topMain .planetImg.Jupiter {
+    padding-right: 10.69%;
+  }
+  main div.topMain .planetImg.Jupiter :first-child {
+    margin-top: 6rem;
+    width: 40.416668vw;
+    margin-bottom: 4.75rem;
+  }
+  main div.topMain .planetImg.Jupiter :nth-child(2) {
+    margin-top: -17.75rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Jupiter.geo :nth-child(2) {
+    margin-bottom: 5.6rem;
+  }
+  main div.topMain .planetImg.Saturn {
+    padding-right: 7.77%;
+  }
+  main div.topMain .planetImg.Saturn :first-child {
+    margin-top: 4.313rem;
+    width: 46.25vw;
+    margin-bottom: 1.125rem;
+  }
+  main div.topMain .planetImg.Saturn :nth-child(2) {
+    margin-top: -18rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Saturn.geo :nth-child(2) {
+    margin-bottom: 6rem;
+  }
+  main div.topMain .planetImg.Uranus {
+    padding-right: 14.93%;
+  }
+  main div.topMain .planetImg.Uranus :first-child {
+    margin-top: 9.875rem;
+    width: 31.806vw;
+    margin-bottom: 8.625rem;
+  }
+  main div.topMain .planetImg.Uranus :nth-child(2) {
+    margin-top: -17.6rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Uranus.geo :nth-child(2) {
+    margin-bottom: 5.5rem;
+  }
+  main div.topMain .planetImg.Neptune {
+    padding-right: 15.27%;
+  }
+  main div.topMain .planetImg.Neptune :first-child {
+    margin-top: 10.125rem;
+    width: 31.25vw;
+    margin-bottom: 8.875rem;
+  }
+  main div.topMain .planetImg.Neptune :nth-child(2) {
+    margin-top: -18rem;
+    width: 10.9723vw;
+  }
+  main div.topMain .planetImg.Neptune.geo :nth-child(2) {
+    margin-bottom: 6rem;
+  }
+  main div.topMain .info {
+    padding: 0rem 11.45% 0rem 0rem;
+    max-width: 21.875rem;
+  }
+  main div.topMain .info .details {
+    width: 100%;
+  }
+  main div.topMain .info .details h2 {
+    text-align: left;
+    font-size: 5rem;
+    margin-bottom: 2.063rem;
+    margin-top: 9.313rem;
+  }
+  main div.topMain .info .details p {
+    text-align: left;
+    font-size: 0.875rem;
+    margin-bottom: 0rem;
+    width: 97%;
+  }
+  main div.topMain .info .details .facts {
+    font-size: 0.875rem;
+    margin-top: 3.438rem;
+    margin-bottom: 2.313rem;
+  }
+  main div.topMain .info nav {
+    width: 21.875rem;
+    margin-bottom: 5.438rem;
+  }
+  main div.topMain .info nav ul {
+    height: 10rem;
+    width: 100%;
+    padding-left: 0rem;
+    margin: 0rem;
+    list-style-type: none;
+  }
+  main div.topMain .info nav ul li {
+    cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.161rem;
+    font-size: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 0rem;
+  }
+  main div.topMain .info nav ul li span.number {
+    color: rgba(255, 255, 255, 0.5);
+    margin-right: 0.5rem;
+    margin-left: 1.25rem;
+  }
+  main div.topMain .info nav ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  main div.topMain .info nav ul.Mercury li.active {
+    background-color: #419ebb;
+  }
+  main div.topMain .info nav ul.Venus li.active {
+    background-color: #eda249;
+  }
+  main div.topMain .info nav ul.Earth li.active {
+    background-color: #6f2ed6;
+  }
+  main div.topMain .info nav ul.Mars li.active {
+    background-color: #d14c32;
+  }
+  main div.topMain .info nav ul.Jupiter li.active {
+    background-color: #d83a34;
+  }
+  main div.topMain .info nav ul.Saturn li.active {
+    background-color: #cd5120;
+  }
+  main div.topMain .info nav ul.Uranus li.active {
+    background-color: #1ec2a4;
+  }
+  main div.topMain .info nav ul.Neptune li.active {
+    background-color: #2d68f0;
+  }
+  main div.data {
+    min-height: auto;
+    padding: 0rem 11.45%;
+    margin-bottom: 3.5rem;
+  }
+  main div.data div {
+    width: 20.9875%;
+    padding-left: 1.375rem;
+  }
+  main div.data div .text {
+    font-size: 0.688rem;
+    margin-left: 0rem;
+    padding-top: 1.313rem;
+    padding-bottom: 0.813rem;
+    letter-spacing: 0.063rem;
+  }
+  main div.data div .data {
+    font-size: 2.5rem;
+    padding-bottom: 1.625rem;
+    letter-spacing: -0.094rem;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  background: #070724 url("../assets/background-stars.svg");
+  background-size: cover;
+}
