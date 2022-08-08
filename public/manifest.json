@@ -1,0 +1,15 @@
+{
+  "short_name": "Planets Fact",
+  "name": "Planets Fact Landing Page",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/F-E-M-Planets-Fact-Site",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
