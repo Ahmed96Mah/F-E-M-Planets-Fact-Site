@@ -1,0 +1,1020 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+main {
+  grid-area: main;
+  div {
+    &.topMain {
+      .planetImg {
+        &.Mercury {
+          :first-child {
+            margin-top: 6rem;
+            width: 6.938rem;
+            margin-bottom: 6.125rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 6.125rem;
+            }
+          }
+        }
+        &.Venus {
+          :first-child {
+            margin-top: 4.625rem;
+            width: 9.625rem;
+            margin-bottom: 5.5rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 5.5rem;
+            }
+          }
+        }
+        &.Earth {
+          :first-child {
+            margin-top: 4.063rem;
+            width: 10.813rem;
+            margin-bottom: 4.875rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 4.875rem;
+            }
+          }
+        }
+        &.Mars {
+          :first-child {
+            margin-top: 5.5rem;
+            width: 8.063rem;
+            margin-bottom: 6.25rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 6.25rem;
+            }
+          }
+        }
+        &.Jupiter {
+          :first-child {
+            margin-top: 2.5rem;
+            width: 14rem;
+            margin-bottom: 3.313rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 3.313rem;
+            }
+          }
+        }
+        &.Saturn {
+          :first-child {
+            margin-top: 1.563rem;
+            width: 16rem;
+            margin-bottom: 2.25rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 2.25rem;
+            }
+          }
+        }
+        &.Uranus {
+          :first-child {
+            margin-top: 4rem;
+            width: 11rem;
+            margin-bottom: 4.813rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 4.813rem;
+            }
+          }
+        }
+        &.Neptune {
+          :first-child {
+            margin-top: 4rem;
+            width: 10.813rem;
+            margin-bottom: 4.875rem;
+          }
+          :nth-child(2) {
+            margin-top: -7.55rem;
+            width: 3.899rem;
+          }
+          &.geo {
+            :nth-child(2) {
+              margin-bottom: 4.875rem;
+            }
+          }
+        }
+      }
+      .info {
+        font-family: 'League Spartan', sans-serif;
+        color: v.$white-clr;
+        .details {
+          h2 {
+            font-family: 'Antonio', sans-serif;
+            font-weight: 500;
+            font-size: 2.5rem;
+            margin-top: 0rem;
+            margin-bottom: 1.875rem;
+          }
+          p {
+            margin: 0rem;
+            font-weight: 400;
+            line-height: 1.375rem;
+            text-align: center;
+            font-size: 0.7rem;
+            width: 88%;
+          }
+          .facts {
+            color: v.$lght-gray-clr;
+            width: 37%;
+            font-size: 0.75rem;
+            margin-top: 4.188rem;
+            margin-bottom: 1.625rem;
+            span {
+              font-weight: 400;
+              a {
+                color: v.$lght-gray-clr;
+                font-weight: 700;
+              }
+            }
+            img {
+              width: 0.75rem;
+            }
+          }
+        }
+        nav {
+          ul {
+            display: none;
+          }
+        }
+      }
+    }
+    &.data {
+      min-height: 13.5rem;
+      margin-bottom: 2.938rem;
+      div {
+        width: 87.2%;
+        min-height: 3rem;
+        color: v.$lght-gray-clr;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        .text {
+          font-family: 'League Spartan', sans-serif;
+          font-weight: 700;
+          font-size: 0.5rem;
+          margin-left: 1.438rem;
+          letter-spacing: 0.046rem;
+        }
+        .data {
+          color: v.$white-clr;
+          font-family: 'Antonio', sans-serif;
+          font-weight: 500;
+          font-size: 1.25rem;
+          margin-right: 1.438rem;
+          letter-spacing: -0.04rem;
+        }
+      }
+    }
+  }
+  &.hide {
+    display: none;
+  }
+
+  /* ----------------------- Media Queries ----------------------- */
+  @include m.flippedMobileScreens(41.25rem, 53.75rem, 26.25rem) {
+    /* --------- ($min-wdth, $max-wdth, $max-hgt) --------- */
+  }
+  @include m.padScreens(37.5rem, 63.938rem) {
+    /* ------ ($min-wdth, $max-wdth) ------ */
+    div {
+      &.topMain {
+        .planetImg {
+          &.Mercury {
+            :first-child {
+              margin-top: 9.188rem;
+              width: 11.5rem;
+              margin-bottom: 9rem;
+            }
+            :nth-child(2) {
+              margin-top: -13rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 7rem;
+              }
+            }
+          }
+          &.Venus {
+            :first-child {
+              margin-top: 7rem;
+              width: 15.813rem;
+              margin-bottom: 6.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -11.5rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Earth {
+            :first-child {
+              margin-top: 6rem;
+              width: 17.813rem;
+              margin-bottom: 5.813rem;
+            }
+            :nth-child(2) {
+              margin-top: -10.85rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 4.875rem;
+              }
+            }
+          }
+          &.Mars {
+            :first-child {
+              margin-top: 8.25rem;
+              width: 13.313rem;
+              margin-bottom: 8rem;
+            }
+            :nth-child(2) {
+              margin-top: -12.15rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6.25rem;
+              }
+            }
+          }
+          &.Jupiter {
+            :first-child {
+              margin-top: 3.375rem;
+              width: 23.063rem;
+              margin-bottom: 3.188rem;
+            }
+            :nth-child(2) {
+              margin-top: -9.05rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 3.313rem;
+              }
+            }
+          }
+          &.Saturn {
+            :first-child {
+              margin-top: 1.563rem;
+              width: 26.375rem;
+              margin-bottom: 1.563rem;
+            }
+            :nth-child(2) {
+              margin-top: -8.15rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 2.25rem;
+              }
+            }
+          }
+          &.Uranus {
+            :first-child {
+              margin-top: 5.813rem;
+              width: 18.125rem;
+              margin-bottom: 5.688rem;
+            }
+            :nth-child(2) {
+              margin-top: -10.75rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 4.813rem;
+              }
+            }
+          }
+          &.Neptune {
+            :first-child {
+              margin-top: 6rem;
+              width: 17.813rem;
+              margin-bottom: 5.813rem;
+            }
+            :nth-child(2) {
+              margin-top: -10.75rem;
+              width: 4.899rem;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 4.875rem;
+              }
+            }
+          }
+        }
+        .info {
+          padding: 0rem 6%;
+          .details {
+            width: 55%;
+            h2 {
+              text-align: left;
+              font-size: 3rem;
+              margin-bottom: 1.875rem;
+            }
+            p {
+              text-align: left;
+              font-size: 0.688rem;
+              margin-bottom: 0rem;
+            }
+          }
+          nav {
+            width: 39%;
+            ul {
+              height: 10rem;
+              width: 100%;
+              padding-left: 0rem;
+              margin: 0rem;
+              list-style-type: none;
+              li {
+                font-family: 'League Spartan', sans-serif;
+                font-weight: 700;
+                letter-spacing: 0.121rem;
+                font-size: 0.563rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 1rem 0rem;
+                span {
+                  &.number {
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-right: 0.5rem;
+                    margin-left: 1.25rem;
+                  }
+                }
+              }
+              &.Mercury {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$cyan-clr);
+                  }
+                }
+              }
+              &.Venus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-orange-clr);
+                  }
+                }
+              }
+              &.Earth {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$purple-clr);
+                  }
+                }
+              }
+              &.Mars {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$redish-orange-clr);
+                  }
+                }
+              }
+              &.Jupiter {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$red-clr);
+                  }
+                }
+              }
+              &.Saturn {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$orange-clr);
+                  }
+                }
+              }
+              &.Uranus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-cyan-clr);
+                  }
+                }
+              }
+              &.Neptune {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-blue-clr);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.data {
+        min-height: auto;
+        padding: 0rem 6%;
+        div {
+          width: 21.7%;
+          padding-left: 0.763rem;
+          .text {
+            margin-left: 0rem;
+            padding-top: 1.2rem;
+            padding-bottom: 0.7rem;
+          }
+          .data {
+            font-size: 1.5rem;
+            padding-bottom: 1.125rem;
+            letter-spacing: -0.056rem;
+          }
+        }
+      }
+    }
+  }
+  @include m.flippedPadScreens(64rem, 75rem, 37.5rem) {
+    /* ------ ($mn-wdth, $max-wdth, $mn-hgt) ------ */
+    div {
+      &.topMain {
+        .planetImg {
+          &.Mercury {
+            padding-right: 20.83%;
+            :first-child {
+              margin-top: 15.125rem;
+              width: 20.14vw;
+              margin-bottom: 11.5rem;
+            }
+            :nth-child(2) {
+              margin-top: -15.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.375rem;
+              }
+            }
+          }
+          &.Venus {
+            padding-right: 17.01%;
+            :first-child {
+              margin-top: 11.688rem;
+              width: 27.7779vw;
+              margin-bottom: 6.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -14.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Earth {
+            padding-right: 15.27%;
+            :first-child {
+              margin-top: 10.125rem;
+              width: 31.25vw;
+              margin-bottom: 8.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Mars {
+            padding-right: 19.23%;
+            :first-child {
+              margin-top: 13.688rem;
+              width: 17.70888vw;
+              margin-bottom: 12.438rem;
+            }
+            :nth-child(2) {
+              margin-top: -16.55rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6.25rem;
+              }
+            }
+          }
+          &.Jupiter {
+            padding-right: 10.69%;
+            :first-child {
+              margin-top: 6rem;
+              width: 40.416668vw;
+              margin-bottom: 4.75rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.75rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.6rem;
+              }
+            }
+          }
+          &.Saturn {
+            padding-right: 7.77%;
+            :first-child {
+              margin-top: 4.313rem;
+              width: 46.25vw;
+              margin-bottom: 1.125rem;
+            }
+            :nth-child(2) {
+              margin-top: -18rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6rem;
+              }
+            }
+          }
+          &.Uranus {
+            padding-right: 14.93%;
+            :first-child {
+              margin-top: 9.875rem;
+              width: 31.806vw;
+              margin-bottom: 8.625rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.6rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Neptune {
+            padding-right: 15.27%;
+            :first-child {
+              margin-top: 10.125rem;
+              width: 31.25vw;
+              margin-bottom: 8.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -18rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6rem;
+              }
+            }
+          }
+        }
+        .info {
+          padding: 0rem 11.45% 0rem 0rem;
+          max-width: 21.875rem;
+          .details {
+            width: 100%;
+            h2 {
+              text-align: left;
+              font-size: 5rem;
+              margin-bottom: 2.063rem;
+              margin-top: 9.313rem;
+            }
+            p {
+              text-align: left;
+              font-size: 0.875rem;
+              margin-bottom: 0rem;
+              width: 97%;
+            }
+            .facts {
+              font-size: 0.875rem;
+              margin-top: 3.438rem;
+              margin-bottom: 2.313rem;
+            }
+          }
+          nav {
+            width: 21.875rem;
+            margin-bottom: 5.438rem;
+            ul {
+              height: 10rem;
+              width: 100%;
+              padding-left: 0rem;
+              margin: 0rem;
+              list-style-type: none;
+              li {
+                cursor: pointer;
+                font-family: 'League Spartan', sans-serif;
+                font-weight: 700;
+                letter-spacing: 0.161rem;
+                font-size: 0.75rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 1rem 0rem;
+                span {
+                  &.number {
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-right: 0.5rem;
+                    margin-left: 1.25rem;
+                  }
+                }
+                &:hover {
+                  background-color: rgba(255, 255, 255, 0.2);
+                }
+              }
+              &.Mercury {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$cyan-clr);
+                  }
+                }
+              }
+              &.Venus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-orange-clr);
+                  }
+                }
+              }
+              &.Earth {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$purple-clr);
+                  }
+                }
+              }
+              &.Mars {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$redish-orange-clr);
+                  }
+                }
+              }
+              &.Jupiter {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$red-clr);
+                  }
+                }
+              }
+              &.Saturn {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$orange-clr);
+                  }
+                }
+              }
+              &.Uranus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-cyan-clr);
+                  }
+                }
+              }
+              &.Neptune {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-blue-clr);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.data {
+        min-height: auto;
+        padding: 0rem 11.45%;
+        margin-bottom: 3.5rem;
+        div {
+          width: 20.9875%;
+          padding-left: 1.375rem;
+          .text {
+            font-size: 0.6rem;
+            margin-left: 0rem;
+            padding-top: 1.313rem;
+            padding-bottom: 0.813rem;
+            letter-spacing: 0.063rem;
+          }
+          .data {
+            font-size: 2.25rem;
+            padding-bottom: 1.625rem;
+            letter-spacing: -0.094rem;
+          }
+        }
+      }
+    }
+  }
+  @include m.wideScreens(31.25rem, 73.75rem) {
+    /* ------ ($min-hgt, $min-wdth) ------ */
+    div {
+      &.topMain {
+        .planetImg {
+          &.Mercury {
+            padding-right: 20.83%;
+            :first-child {
+              margin-top: 15.125rem;
+              width: 20.14vw;
+              margin-bottom: 11.5rem;
+            }
+            :nth-child(2) {
+              margin-top: -15.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.375rem;
+              }
+            }
+          }
+          &.Venus {
+            padding-right: 17.01%;
+            :first-child {
+              margin-top: 11.688rem;
+              width: 27.7779vw;
+              margin-bottom: 6.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -14.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Earth {
+            padding-right: 15.27%;
+            :first-child {
+              margin-top: 10.125rem;
+              width: 31.25vw;
+              margin-bottom: 8.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.5rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Mars {
+            padding-right: 19.23%;
+            :first-child {
+              margin-top: 13.688rem;
+              width: 17.70888vw;
+              margin-bottom: 12.438rem;
+            }
+            :nth-child(2) {
+              margin-top: -16.55rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6.25rem;
+              }
+            }
+          }
+          &.Jupiter {
+            padding-right: 10.69%;
+            :first-child {
+              margin-top: 6rem;
+              width: 40.416668vw;
+              margin-bottom: 4.75rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.75rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.6rem;
+              }
+            }
+          }
+          &.Saturn {
+            padding-right: 7.77%;
+            :first-child {
+              margin-top: 4.313rem;
+              width: 46.25vw;
+              margin-bottom: 1.125rem;
+            }
+            :nth-child(2) {
+              margin-top: -18rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6rem;
+              }
+            }
+          }
+          &.Uranus {
+            padding-right: 14.93%;
+            :first-child {
+              margin-top: 9.875rem;
+              width: 31.806vw;
+              margin-bottom: 8.625rem;
+            }
+            :nth-child(2) {
+              margin-top: -17.6rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 5.5rem;
+              }
+            }
+          }
+          &.Neptune {
+            padding-right: 15.27%;
+            :first-child {
+              margin-top: 10.125rem;
+              width: 31.25vw;
+              margin-bottom: 8.875rem;
+            }
+            :nth-child(2) {
+              margin-top: -18rem;
+              width: 10.9723vw;
+            }
+            &.geo {
+              :nth-child(2) {
+                margin-bottom: 6rem;
+              }
+            }
+          }
+        }
+        .info {
+          padding: 0rem 11.45% 0rem 0rem;
+          max-width: 21.875rem;
+          .details {
+            width: 100%;
+            h2 {
+              text-align: left;
+              font-size: 5rem;
+              margin-bottom: 2.063rem;
+              margin-top: 9.313rem;
+            }
+            p {
+              text-align: left;
+              font-size: 0.875rem;
+              margin-bottom: 0rem;
+              width: 97%;
+            }
+            .facts {
+              font-size: 0.875rem;
+              margin-top: 3.438rem;
+              margin-bottom: 2.313rem;
+            }
+          }
+          nav {
+            width: 21.875rem;
+            margin-bottom: 5.438rem;
+            ul {
+              height: 10rem;
+              width: 100%;
+              padding-left: 0rem;
+              margin: 0rem;
+              list-style-type: none;
+              li {
+                cursor: pointer;
+                font-family: 'League Spartan', sans-serif;
+                font-weight: 700;
+                letter-spacing: 0.161rem;
+                font-size: 0.75rem;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                padding: 1rem 0rem;
+                span {
+                  &.number {
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-right: 0.5rem;
+                    margin-left: 1.25rem;
+                  }
+                }
+                &:hover {
+                  background-color: rgba(255, 255, 255, 0.2);
+                }
+              }
+              &.Mercury {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$cyan-clr);
+                  }
+                }
+              }
+              &.Venus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-orange-clr);
+                  }
+                }
+              }
+              &.Earth {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$purple-clr);
+                  }
+                }
+              }
+              &.Mars {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$redish-orange-clr);
+                  }
+                }
+              }
+              &.Jupiter {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$red-clr);
+                  }
+                }
+              }
+              &.Saturn {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$orange-clr);
+                  }
+                }
+              }
+              &.Uranus {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-cyan-clr);
+                  }
+                }
+              }
+              &.Neptune {
+                li {
+                  &.active {
+                    @include m.listStyles(v.$lght-blue-clr);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &.data {
+        min-height: auto;
+        padding: 0rem 11.45%;
+        margin-bottom: 3.5rem;
+        div {
+          width: 20.9875%;
+          padding-left: 1.375rem;
+          .text {
+            font-size: 0.688rem;
+            margin-left: 0rem;
+            padding-top: 1.313rem;
+            padding-bottom: 0.813rem;
+            letter-spacing: 0.063rem;
+          }
+          .data {
+            font-size: 2.5rem;
+            padding-bottom: 1.625rem;
+            letter-spacing: -0.094rem;
+          }
+        }
+      }
+    }
+  }
+}
