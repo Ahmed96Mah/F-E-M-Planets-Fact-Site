@@ -22,7 +22,7 @@ const Planet = ({
   // The pathName's length = 1 ONLY  at the root
   const choice =
     pathName.length === 1
-      ? 'Mercury'.toUpperCase()
+      ? 'Earth'.toUpperCase()
       : pathName.slice(1).toUpperCase();
 
   const handleClick = (e: Event): void => {
@@ -181,7 +181,7 @@ const Planet = ({
           <nav aria-label='Planet'>
             <Link
               className="Mercury"
-              to="/"
+              to="/Mercury"
               onClick={
                 upperNavClick as unknown as React.MouseEventHandler<HTMLAnchorElement>
               }
@@ -199,7 +199,7 @@ const Planet = ({
             </Link>
             <Link
               className="Earth"
-              to="/Earth"
+              to="/"
               onClick={
                 upperNavClick as unknown as React.MouseEventHandler<HTMLAnchorElement>
               }
@@ -283,14 +283,14 @@ const Planet = ({
         </div>
         <div className="menu hide">
           <nav aria-label='Planet'>
-            <MenuDiv path="/" text="Mercury" onChangePlanet={onChangePlanet} />
+            <MenuDiv path="/Mercury" text="Mercury" onChangePlanet={onChangePlanet} />
             <MenuDiv
               path="/Venus"
               text="Venus"
               onChangePlanet={onChangePlanet}
             />
             <MenuDiv
-              path="/Earth"
+              path="/"
               text="Earth"
               onChangePlanet={onChangePlanet}
             />
