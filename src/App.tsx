@@ -43,7 +43,7 @@ const App = (): ReactElement => {
   const Planets = data;
   const pathName = useLocation().pathname;
   // The pathName's length = 1 ONLY  at the root
-  const choice = pathName.length === 1 ? 'Mercury' : pathName.slice(1);
+  const choice = pathName.length === 1 ? 'Earth' : pathName.slice(1);
   const [planetData, setPlanetData] = useState(
     Planets.filter((planet) => planet['name'] === choice)
   );
@@ -113,7 +113,7 @@ const App = (): ReactElement => {
     <div className="App">
       <Routes>
         <Route
-          path="/"
+          path="/Mercury"
           element={
             <Planet
               planetClass="Mercury"
@@ -135,7 +135,7 @@ const App = (): ReactElement => {
           }
         />
         <Route
-          path="/Earth"
+          path="/"
           element={
             <Planet
               planetClass="Earth"
