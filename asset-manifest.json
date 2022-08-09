@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/F-E-M-Planets-Fact-Site/static/css/main.8f1c4df5.css",
-    "main.js": "/F-E-M-Planets-Fact-Site/static/js/main.4684185c.js",
+    "main.js": "/F-E-M-Planets-Fact-Site/static/js/main.c9ba6529.js",
     "static/js/787.07b74c3f.chunk.js": "/F-E-M-Planets-Fact-Site/static/js/787.07b74c3f.chunk.js",
     "static/media/geology-mercury.png": "/F-E-M-Planets-Fact-Site/static/media/geology-mercury.aa6732c318454e3fc480.png",
     "static/media/geology-venus.png": "/F-E-M-Planets-Fact-Site/static/media/geology-venus.484f9dacbeb3b555ffba.png",
@@ -33,11 +33,11 @@
     "static/media/icon-hamburger.svg": "/F-E-M-Planets-Fact-Site/static/media/icon-hamburger.05a40a49142005f6faf230286ab38214.svg",
     "static/media/icon-chevron.svg": "/F-E-M-Planets-Fact-Site/static/media/icon-chevron.8915cee97f993fb990aac66c578ad575.svg",
     "main.8f1c4df5.css.map": "/F-E-M-Planets-Fact-Site/static/css/main.8f1c4df5.css.map",
-    "main.4684185c.js.map": "/F-E-M-Planets-Fact-Site/static/js/main.4684185c.js.map",
+    "main.c9ba6529.js.map": "/F-E-M-Planets-Fact-Site/static/js/main.c9ba6529.js.map",
     "787.07b74c3f.chunk.js.map": "/F-E-M-Planets-Fact-Site/static/js/787.07b74c3f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8f1c4df5.css",
-    "static/js/main.4684185c.js"
+    "static/js/main.c9ba6529.js"
   ]
 }
