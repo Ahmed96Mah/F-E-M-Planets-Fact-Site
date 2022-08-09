@@ -12,6 +12,7 @@
     "@types/node": "^16.11.46",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
@@ -24,7 +25,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write ."
+    "prettier": "prettier --config .prettierrc.json --ignore-path .prettierignore --write .",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
