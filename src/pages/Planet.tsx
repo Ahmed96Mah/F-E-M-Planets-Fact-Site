@@ -178,7 +178,7 @@ const Planet = ({
               navClick as unknown as React.MouseEventHandler<HTMLImageElement>
             }
           />
-          <nav>
+          <nav aria-label='Planet'>
             <Link
               className="Mercury"
               to="/"
@@ -254,7 +254,7 @@ const Planet = ({
           </nav>
         </div>
         <div className="lower">
-          <nav>
+          <nav aria-label='Section'>
             <ul className={planetClass}>
               <li
                 className="active"
@@ -282,7 +282,7 @@ const Planet = ({
           </nav>
         </div>
         <div className="menu hide">
-          <nav>
+          <nav aria-label='Planet'>
             <MenuDiv path="/" text="Mercury" onChangePlanet={onChangePlanet} />
             <MenuDiv
               path="/Venus"
@@ -349,7 +349,7 @@ const Planet = ({
                 <Image path={sourceImg} alt="" />
               </div>
             </div>
-            <nav>
+            <nav aria-label='Section'>
               <ul className={planetClass}>
                 <li
                   className="active"
