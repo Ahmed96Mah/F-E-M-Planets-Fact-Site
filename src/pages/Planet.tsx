@@ -1,5 +1,5 @@
-import { ReactElement } from 'react';
-import { Link } from 'react-router-dom';
+import { ReactElement, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import hamIcon from '../assets/icon-hamburger.svg';
 import sourceImg from '../assets/icon-source.svg';
 import { info } from '../App';
@@ -18,6 +18,13 @@ const Planet = ({
   onChangeSec: Function;
   onChangePlanet: Function;
 }): ReactElement => {
+  const pathName = useLocation().pathname;
+  // The pathName's length = 1 ONLY  at the root
+  const choice =
+    pathName.length === 1
+      ? 'Mercury'.toUpperCase()
+      : pathName.slice(1).toUpperCase();
+
   const handleClick = (e: Event): void => {
     !(e.target as HTMLElement)!.classList.contains('active') &&
       (e.target as HTMLElement)!.classList.toggle('active');
@@ -147,6 +154,17 @@ const Planet = ({
       onChangeSec(sec, imgName);
     }
   };
+
+  useEffect(() => {
+    document
+      .querySelector('.upper')!
+      .querySelectorAll('a')
+      .forEach((anch) => {
+        anch.textContent === choice &&
+          !anch.classList.contains('active') &&
+          anch.classList.toggle('active');
+      });
+  }, [choice]);
 
   return (
     <div className="Page">
