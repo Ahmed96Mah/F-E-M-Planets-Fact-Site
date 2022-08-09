@@ -14,7 +14,7 @@ const MenuDiv = ({
   const changePlanet = (e: Event): void => {
     if (
       (e.target as HTMLElement).nodeName === 'A' &&
-      (e.target as HTMLElement).id === 'text'
+      (e.target as HTMLElement).className === 'text'
     ) {
       const temp = (e.target as HTMLElement).textContent!.toLowerCase();
       const planetName = temp.charAt(0).toUpperCase().concat(temp.slice(1));
@@ -34,7 +34,7 @@ const MenuDiv = ({
       onChangePlanet(planetName);
     } else if (
       (e.target as HTMLElement).nodeName === 'A' &&
-      (e.target as HTMLElement).id === 'img'
+      (e.target as HTMLElement).className === 'img'
     ) {
       const temp = (e.target as HTMLElement)
         .querySelector('img')!
@@ -96,7 +96,7 @@ const MenuDiv = ({
       <div className={`circle ${text}`}></div>
       <div className="nav">
         <Link
-          id="text"
+          className="text"
           to={path}
           onClick={
             changePlanet as unknown as React.MouseEventHandler<HTMLAnchorElement>
@@ -105,7 +105,7 @@ const MenuDiv = ({
           {text.toUpperCase()}
         </Link>
         <Link
-          id="img"
+          className="img"
           to={path}
           onClick={
             changePlanet as unknown as React.MouseEventHandler<HTMLAnchorElement>
