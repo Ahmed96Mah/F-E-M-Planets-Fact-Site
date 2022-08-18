@@ -320,17 +320,21 @@ const Planet = ({
       </header>
       <main>
         <div className="topMain">
-          {planetInfo['main']['secName'] === 'geology' && (
-            <div className={`planetImg ${planetInfo['planetName']} geo`}>
-              <Image path={planetInfo['main']['img']} alt="" />
-              <Image path={`${planetInfo['main']['geoImg']}`} alt="" />
-            </div>
-          )}
-          {planetInfo['main']['secName'] !== 'geology' && (
-            <div className={`planetImg ${planetInfo['planetName']}`}>
-              <Image path={planetInfo['main']['img']} alt="" />
-            </div>
-          )}
+          {
+            planetInfo['main']['secName'] === 'geology' && (
+              <div className={`planetImg ${planetInfo['planetName']} geo`}>
+                <Image path={planetInfo['main']['img']} alt="" />
+                <Image path={`${planetInfo['main']['geoImg']}`} alt="" />
+              </div>
+            )
+          }
+          {
+            planetInfo['main']['secName'] !== 'geology' && (
+              <div className={`planetImg ${planetInfo['planetName']}`}>
+                <Image path={planetInfo['main']['img']} alt="" />
+              </div>
+            )
+          }
           <div className="info">
             <div className="details">
               <h2>{planetInfo['planetName'].toUpperCase()}</h2>
