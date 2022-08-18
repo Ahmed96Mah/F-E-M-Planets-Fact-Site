@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Built with
 
-- React Framework (using functional components)
+- React Library (using functional components)
 - TypeScript
 - Sass
 - CSS Flexbox
